@@ -1,0 +1,6 @@
+<svg height="200" width="300">
+    <g>
+    <polygon points="150,0 20,200 280,200" fill="red" />
+    <text x="150" y="117" fill="blue" style="font-size:46px;text-anchor:middle">FSD</text>
+    </g>
+  </svg>
