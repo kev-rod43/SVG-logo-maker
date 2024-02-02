@@ -38,22 +38,24 @@ function init() { }
 inquirer
     .prompt(questions)
     .then((answers) => {
-
+        console.log(answers);
         let userShape;
 
         //creates a new instance of the picked shape, then generates the svg file
         switch (answers.shape) {
             case 'Circle':
                 userShape = new Circle(answers.text, answers.textColor, answers.color);
-
+                userShape.generateSVG('./examples/generatedSVG.svg');
+                break;
             case 'Square':
                 userShape = new Square(answers.text, answers.textColor, answers.color);
+                userShape.generateSVG('./examples/generatedSVG.svg');
+                break;
 
             case 'Triangle':
                 userShape = new Triangle(answers.text, answers.textColor, answers.color);
-
-            default:
                 userShape.generateSVG('./examples/generatedSVG.svg');
+                break;
         }
     })
 
