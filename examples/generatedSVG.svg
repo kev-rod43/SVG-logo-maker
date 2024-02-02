@@ -1,6 +1,6 @@
 <svg height="200" width="300">
     <g>
-    <rect width="200" height="200" x="50" y="0" fill="red" />
-    <text x="150" y="117" fill="blue" style="font-size:46px;text-anchor:middle">LAS</text>
+    <circle cx="150" cy="100" r="100" fill="yellow" />
+    <text x="150" y="117" fill="red" style="font-size:46px;text-anchor:middle">LAS</text>
     </g>
   </svg>
